@@ -517,11 +517,35 @@ li:last-child {
 .fixed {
   position: fixed;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
 .bottom-0 {
   bottom: 0px;
 }
 .left-0 {
   left: 0px;
+}
+.top-\[50\%\] {
+  top: 50%;
+}
+.left-\[30\%\] {
+  left: 30%;
+}
+.top-\[25\%\] {
+  top: 25%;
+}
+.left-\[50\%\] {
+  left: 50%;
+}
+.left-\[40\%\] {
+  left: 40%;
+}
+.left-\[35\%\] {
+  left: 35%;
 }
 .z-20 {
   z-index: 20;
@@ -565,6 +589,12 @@ li:last-child {
 }
 .h-full {
   height: 100%;
+}
+.h-\[30vh\] {
+  height: 30vh;
+}
+.h-\[50vh\] {
+  height: 50vh;
 }
 .w-full {
   width: 100%;
