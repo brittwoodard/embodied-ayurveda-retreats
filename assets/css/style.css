@@ -553,6 +553,12 @@ li:last-child {
 .right-\[-4rem\] {
   right: -4rem;
 }
+.top-\[45\%\] {
+  top: 45%;
+}
+.left-\[38\%\] {
+  left: 38%;
+}
 .z-20 {
   z-index: 20;
 }
@@ -601,6 +607,9 @@ li:last-child {
 }
 .h-\[50vh\] {
   height: 50vh;
+}
+.h-\[40vh\] {
+  height: 40vh;
 }
 .w-full {
   width: 100%;
