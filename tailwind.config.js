@@ -31,7 +31,7 @@ module.exports = {
         '50': '50vh',
       },
       colors: {
-        'dark': '#404232',
+        'dark': '#231F1D',
         'light': '#D0C6C0',
         'main': '#E4D7D3',
         'feature': '#A1A67F',
