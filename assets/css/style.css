@@ -737,6 +737,9 @@ li:last-child {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-4 {
+    margin-top: 1rem;
+  }
   .lg\:h-\[60vh\] {
     height: 60vh;
   }
