@@ -566,6 +566,9 @@ li:last-child {
 .mt-4 {
   margin-top: 1rem;
 }
+.mb-16 {
+  margin-bottom: 4rem;
+}
 .block {
   display: block;
 }
