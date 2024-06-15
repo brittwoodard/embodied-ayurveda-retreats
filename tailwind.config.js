@@ -32,7 +32,7 @@ module.exports = {
       },
       colors: {
         'dark': '#404232',
-        'light': '#F6F1F0',
+        'light': '#D0C6C0',
         'main': '#E4D7D3',
         'feature': '#A1A67F',
         'transparent': 'transparent',
