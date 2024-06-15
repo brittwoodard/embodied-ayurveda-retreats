@@ -536,6 +536,27 @@ li:last-child {
 .right-\[4rem\] {
   right: 4rem;
 }
+.right-\[2rem\] {
+  right: 2rem;
+}
+.left-\[2rem\] {
+  left: 2rem;
+}
+.left-\[8rem\] {
+  left: 8rem;
+}
+.left-\[6rem\] {
+  left: 6rem;
+}
+.left-\[5rem\] {
+  left: 5rem;
+}
+.left-\[7rem\] {
+  left: 7rem;
+}
+.bottom-\[1rem\] {
+  bottom: 1rem;
+}
 .z-10 {
   z-index: 10;
 }
@@ -551,6 +572,14 @@ li:last-child {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .-mt-\[1rem\] {
   margin-top: -1rem;
@@ -740,6 +769,13 @@ li:last-child {
   .lg\:top-\[20\%\] {
     top: 20%;
   }
+  .lg\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .lg\:grid {
+    display: grid;
+  }
   .lg\:aspect-\[3\/4\] {
     aspect-ratio: 3/4;
   }
@@ -748,5 +784,8 @@ li:last-child {
   }
   .lg\:h-\[60vh\] {
     height: 60vh;
+  }
+  .lg\:p-10p {
+    padding: 10%;
   }
 }
