@@ -547,6 +547,12 @@ li:last-child {
 .left-\[35\%\] {
   left: 35%;
 }
+.-right-\[4rem\] {
+  right: -4rem;
+}
+.right-\[-4rem\] {
+  right: -4rem;
+}
 .z-20 {
   z-index: 20;
 }
