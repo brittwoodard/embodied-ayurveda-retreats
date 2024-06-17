@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blank
 title: Page Not Found
 permalink: /404.html
 heading: Page Not Found
@@ -10,15 +10,15 @@ links:
     url: /index.html
   link_2: 
     title: Contact
-    url: /contact.html
+    url: mailto:connect@embodiedayurvedaretreats.com?subject=Let's%20Connect
 ---
 
-<section class="flex justify-center justify-items-center text-center items-center h-screen">
+<section class="flex justify-center justify-items-center text-center items-center h-screen p-[10%]">
 
     <div>
         <h1 class="text-2xl mb-8">{{page.heading}}</h1>
         <p>{{page.description_html}}</p>
-        <a href="{{page.links.link_1.url}}" class="link">{{page.links.link_1.title}}</a>
-        <a href="{{page.links.link_2.url}}" class="link">{{page.links.link_2.title}}</a>
+        <a href="{{page.links.link_1.url}}" class="button mr-2 md:mr-4">{{page.links.link_1.title}}</a>
+        <a href="{{page.links.link_2.url}}" class="button mr-2 md:ml-4">{{page.links.link_2.title}}</a>
     </div>
 </section>

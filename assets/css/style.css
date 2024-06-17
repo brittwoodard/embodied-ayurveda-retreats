@@ -559,11 +559,17 @@ li:last-child {
 .ml-\[0\.5em\] {
   margin-left: 0.5em;
 }
+.mr-4 {
+  margin-right: 1rem;
+}
 .mt-32 {
   margin-top: 8rem;
 }
 .mt-4 {
   margin-top: 1rem;
+}
+.mr-2 {
+  margin-right: 0.5rem;
 }
 .block {
   display: block;
@@ -643,11 +649,17 @@ li:last-child {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-10p {
+  padding: 10%;
+}
 .p-2 {
   padding: 0.5rem;
 }
 .p-5p {
   padding: 5%;
+}
+.p-\[10\%\] {
+  padding: 10%;
 }
 .text-center {
   text-align: center;
@@ -701,6 +713,12 @@ li:last-child {
   .md\:my-16 {
     margin-top: 4rem;
     margin-bottom: 4rem;
+  }
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+  .md\:mr-4 {
+    margin-right: 1rem;
   }
   .md\:grid {
     display: grid;
