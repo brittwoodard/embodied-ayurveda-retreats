@@ -605,6 +605,9 @@ li:last-child {
 .w-\[75vw\] {
   width: 75vw;
 }
+.w-\[85\%\] {
+  width: 85%;
+}
 .w-full {
   width: 100%;
 }
@@ -694,8 +697,8 @@ li:last-child {
 .text-\[1\.25rem\] {
   font-size: 1.25rem;
 }
-.text-\[2rem\] {
-  font-size: 2rem;
+.text-\[1\.8rem\] {
+  font-size: 1.8rem;
 }
 .text-\[3rem\] {
   font-size: 3rem;
@@ -726,16 +729,13 @@ li:last-child {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
-
 .placeholder\:text-dark\/60::-moz-placeholder {
   color: rgb(35 31 29 / 0.6);
 }
 
-
 .placeholder\:text-dark\/60::placeholder {
   color: rgb(35 31 29 / 0.6);
 }
-
 
 .hover\:shadow-lg:hover {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -743,28 +743,23 @@ li:last-child {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-
 .hover\:duration-500:hover {
   transition-duration: 500ms;
 }
 
-
 .focus\:border-b-2:focus {
   border-bottom-width: 2px;
 }
-
 
 .focus\:border-feature:focus {
   --tw-border-opacity: 1;
   border-color: rgb(161 166 127 / var(--tw-border-opacity));
 }
 
-
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-
 
 @media (min-width: 768px) {
   .md\:right-\[45\%\] {
@@ -808,7 +803,6 @@ li:last-child {
     padding: 10%;
   }
 }
-
 
 @media (min-width: 1024px) {
   .lg\:top-\[20\%\] {
