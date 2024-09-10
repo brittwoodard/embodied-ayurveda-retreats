@@ -97,72 +97,37 @@ hide-from-google: false
 
 <!-- ActiveCampaign JavaScript (Retained for Functionality) -->
 <script>
-  window.cfields = [];
   window._show_thank_you = function (id, message, trackcmp_url, email) {
-    var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
+    var form = document.getElementById('_form_' + id + '_');
     form.querySelector('._form-content').style.display = 'none';
-    thank_you.innerHTML = message;
-    thank_you.style.display = 'block';
-    const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
-    var visitorObject = window[vgoAlias];
-    if (email && typeof visitorObject !== 'undefined') {
-      visitorObject('setEmail', email);
-      visitorObject('update');
-    } else if (typeof (trackcmp_url) != 'undefined' && trackcmp_url) {
-      _load_script(trackcmp_url);
-    }
-    if (typeof window._form_callback !== 'undefined') window._form_callback(id);
+    form.querySelector('._form-thank-you').style.display = 'block';
+
+    // Redirect to the custom thank-you page after successful form submission
+    window.location.href = "https://embodiedayurvedaretreats.com/thank-you-bali-preceptor-experience";
   };
-  window._show_error = function (id, message, html) {
-    var form = document.getElementById('_form_' + id + '_'),
-      err = document.createElement('div'),
-      button = form.querySelector('button'),
-      old_error = form.querySelector('._form_error');
-    if (old_error) old_error.parentNode.removeChild(old_error);
-    err.innerHTML = message;
-    err.className = '_error-inner _form_error _no_arrow';
-    var wrapper = document.createElement('div');
-    wrapper.className = '_form-inner';
-    wrapper.appendChild(err);
-    button.parentNode.insertBefore(wrapper, button);
-    var submitButton = form.querySelector('[id^="_form"][id$="_submit"]');
-    submitButton.disabled = false;
-    submitButton.classList.remove('processing');
-    if (html) {
-      var div = document.createElement('div');
-      div.className = '_error-html';
-      div.innerHTML = html;
-      err.appendChild(div);
-    }
-  };
-  window._load_script = function (url, callback, isSubmit) {
-    var head = document.querySelector('head'), script = document.createElement('script'), r = false;
-    var submitButton = document.querySelector('#_form_1_submit');
-    script.charset = 'utf-8';
-    script.src = url;
-    if (callback) {
-      script.onload = script.onreadystatechange = function () {
-        if (!r && (!this.readyState || this.readyState == 'complete')) {
-          r = true;
-          callback();
-        }
-      };
-    }
-    script.onerror = function () {
-      if (isSubmit) {
-        _show_error("1", "Sorry, your submission failed. Please try again.");
-        submitButton.disabled = false;
-        submitButton.classList.remove('processing');
-      }
-    }
-    head.appendChild(script);
-  };
+
   (function () {
     var form_to_submit = document.getElementById('_form_1_');
     form_to_submit.addEventListener('submit', function (e) {
       e.preventDefault();
       var serialized = new URLSearchParams(new FormData(form_to_submit)).toString();
-      _load_script('https://embodiedayurvedaretreats.activehosted.com/proc.php?' + serialized + '&jsonp=true');
+
+      // ActiveCampaign form action URL
+      var actionURL = form_to_submit.getAttribute('action');
+
+      // Submit the form data to ActiveCampaign and handle redirection
+      fetch(actionURL + '?' + serialized, { method: 'POST' })
+        .then(function (response) {
+          if (response.ok) {
+            // Redirect to your custom thank-you page
+            window.location.href = "https://embodiedayurvedaretreats.com/thank-you-bali-preceptor-experience";
+          } else {
+            console.error('Form submission failed');
+          }
+        })
+        .catch(function (error) {
+          console.error('There was an error!', error);
+        });
     });
   })();
 </script>
