@@ -98,17 +98,9 @@ hide-from-google: false
 
 <!-- ActiveCampaign JavaScript (Retained for Functionality) -->
 <script>
-  window._show_thank_you = function (id, message, trackcmp_url, email) {
-    var form = document.getElementById('_form_' + id + '_');
-    form.querySelector('._form-content').style.display = 'none';
-    form.querySelector('._form-thank-you').style.display = 'block';
-
-    // Redirect to the custom thank-you page after successful form submission
-    window.location.href = "https://embodiedayurvedaretreats.com/thank-you-bali-preceptor-experience";
-  };
-
   (function () {
     var form_to_submit = document.getElementById('_form_1_');
+
     form_to_submit.addEventListener('submit', function (e) {
       e.preventDefault();
       var serialized = new URLSearchParams(new FormData(form_to_submit)).toString();
@@ -120,7 +112,7 @@ hide-from-google: false
       fetch(actionURL + '?' + serialized, { method: 'POST' })
         .then(function (response) {
           if (response.ok) {
-            // Redirect to your custom thank-you page
+            // Redirect to your custom thank-you page after successful submission
             window.location.href = "https://embodiedayurvedaretreats.com/thank-you-bali-preceptor-experience";
           } else {
             console.error('Form submission failed');
