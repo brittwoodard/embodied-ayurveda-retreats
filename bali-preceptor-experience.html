@@ -68,7 +68,8 @@ hide-from-google: false
           <div class="mb-1">
             <textarea name="PRECEPTOR_INTEREST"
               class="required text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60 leading-tight"
-              placeholder="What's calling you to join a hands-on, in-person mentorship for your Ayurvedic studies?" required=""></textarea>
+              placeholder="What's calling you to join a hands-on, in-person mentorship for your Ayurvedic studies?"
+              required=""></textarea>
           </div>
 
           <!-- Button -->
@@ -83,5 +84,148 @@ hide-from-google: false
     </div>
   </div>
   </div>
+
+</section>
+
+<section>
+  <!-- Right Column -->
+  <div class="md:p-10p flex justify-center items-center mt-32 lg:mt-0 mb-12 md:mb-0">
+    <div class="md:w-[80%] mx-auto p-5p md:p-0">
+      <h1 class="font-serif leading-[0.9em] lowercase text-[1.8rem] text-center">
+        Learn More About the Bali Preceptor Experience
+      </h1>
+      <h2 class="text-center leading-[1em] mt-4 lowercase w-[85%] lg:w-[80%] mx-auto mb-4">
+        Download our free guide with a detailed itinerary to see if this experience is right for you
+      </h2>
+
+      <!-- ActiveCampaign Form with Tailwind Styling -->
+      <form method="POST" action="https://embodiedayurvedaretreats.activehosted.com/proc.php" id="_form_1_"
+        class="lg:w-[80%] mx-auto" novalidate data-styles-version="5">
+
+        <input type="hidden" name="u" value="1" />
+        <input type="hidden" name="f" value="1" />
+        <input type="hidden" name="s" />
+        <input type="hidden" name="c" value="0" />
+        <input type="hidden" name="m" value="0" />
+        <input type="hidden" name="act" value="sub" />
+        <input type="hidden" name="v" value="2" />
+        <input type="hidden" name="or" value="67ab2eb3-36c4-42fe-939f-d8f5ed4d2d9b" />
+
+        <!-- Title -->
+        <div class="_form_element _x15552910 _full_width _clear">
+          <h3 class="font-bold text-center">Subscribe for Email Updates</h3>
+        </div>
+
+        <!-- Description -->
+        <div class="_form_element _x32637555 _full_width _clear mb-4">
+          <p class="text-center">Add a descriptive message telling what your visitor is signing up for here.</p>
+        </div>
+
+        <!-- First Name -->
+        <div class="grid lg:grid-cols-2 gap-1 mb-1">
+          <div class="_form_element _x22011506 _full_width">
+            <label for="firstname" class="_form-label">First Name*</label>
+            <input type="text" name="firstname"
+              class="text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60"
+              placeholder="First Name" required />
+          </div>
+
+          <!-- Last Name -->
+          <div class="_form_element _x82231078 _full_width">
+            <label for="lastname" class="_form-label">Last Name*</label>
+            <input type="text" name="lastname"
+              class="text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60"
+              placeholder="Last Name" required />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="_form_element _x35691306 _full_width mb-1">
+          <label for="email" class="_form-label">Email*</label>
+          <input type="email" name="email"
+            class="text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60"
+            placeholder="Email" required />
+        </div>
+
+        <!-- Why (Preceptor Interest) -->
+        <div class="_form_element _x09890988 _full_width mb-1">
+          <label for="field[1]" class="_form-label">Why*</label>
+          <textarea name="field[1]"
+            class="text bg-transparent border border-dark w-full rounded-none p-2 focus:outline-none focus:border-b-2 focus:border-feature placeholder:text-dark/60 leading-tight"
+            placeholder="What's calling you to join a hands-on, in-person mentorship for your Ayurvedic studies?"
+            required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="_button-wrapper _full_width">
+          <button id="_form_1_submit"
+            class="border border-dark bg-feature rounded-none cursor-pointer w-full p-2 hover:duration-500 hover:shadow-lg"
+            type="submit">Submit</button>
+        </div>
+
+        <!-- Branding -->
+        <div class="_form-branding mt-6">
+          <div class="_marketing-by">Marketing by</div>
+          <a href="https://www.activecampaign.com/?utm_medium=referral&utm_campaign=acforms" class="_logo">
+            <span class="form-sr-only">ActiveCampaign</span>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ActiveCampaign JavaScript -->
+  <script>
+    window.cfields = { "1": "why" };
+    window._show_thank_you = function (id, message, trackcmp_url, email) {
+      var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
+      form.querySelector('._form-content').style.display = 'none';
+      thank_you.innerHTML = message;
+      thank_you.style.display = 'block';
+      const vgoAlias = typeof visitorGlobalObjectAlias === 'undefined' ? 'vgo' : visitorGlobalObjectAlias;
+      var visitorObject = window[vgoAlias];
+      if (email && typeof visitorObject !== 'undefined') {
+        visitorObject('setEmail', email);
+        visitorObject('update');
+      } else if (typeof (trackcmp_url) != 'undefined' && trackcmp_url) {
+        _load_script(trackcmp_url);
+      }
+      if (typeof window._form_callback !== 'undefined') window._form_callback(id);
+    };
+    window._load_script = function (url, callback, isSubmit) {
+      var head = document.querySelector('head'), script = document.createElement('script'), r = false;
+      var submitButton = document.querySelector('#_form_1_submit');
+      script.charset = 'utf-8';
+      script.src = url;
+      if (callback) {
+        script.onload = script.onreadystatechange = function () {
+          if (!r && (!this.readyState || this.readyState == 'complete')) {
+            r = true;
+            callback();
+          }
+        };
+      }
+      script.onerror = function () {
+        if (isSubmit) {
+          _show_error("1", "Sorry, your submission failed. Please try again.");
+          submitButton.disabled = false;
+          submitButton.classList.remove('processing');
+        }
+      }
+      head.appendChild(script);
+    };
+    (function () {
+      var form_to_submit = document.getElementById('_form_1_');
+      var allInputs = form_to_submit.querySelectorAll('input, select, textarea');
+      form_to_submit.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var submitButton = e.target.querySelector('#_form_1_submit');
+        submitButton.disabled = true;
+        submitButton.classList.add('processing');
+        _load_script('https://embodiedayurvedaretreats.activehosted.com/proc.php?' + new URLSearchParams(new FormData(form_to_submit)).toString() + '&jsonp=true', null, true);
+      });
+    })();
+  </script>
+
 
 </section>

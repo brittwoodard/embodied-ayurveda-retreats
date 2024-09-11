@@ -584,8 +584,8 @@ li:last-child {
 .mt-4 {
   margin-top: 1rem;
 }
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .block {
   display: block;
@@ -740,12 +740,8 @@ li:last-child {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-.font-medium {
-  font-weight: 500;
+.font-bold {
+  font-weight: 700;
 }
 .lowercase {
   text-transform: lowercase;
@@ -764,10 +760,6 @@ li:last-child {
 }
 .tracking-\[0\.1em\] {
   letter-spacing: 0.1em;
-}
-.text-dark {
-  --tw-text-opacity: 1;
-  color: rgb(35 31 29 / var(--tw-text-opacity));
 }
 .outline {
   outline-style: solid;
