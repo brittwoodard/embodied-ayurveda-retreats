@@ -465,12 +465,6 @@ li:last-child {
   font-size: 2rem;
   letter-spacing: 0.025em;
 }
-.serif-md {
-  margin-bottom: 0.5rem;
-  font-family: the-seasons, serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.025em;
-}
 .serif-sm {
   margin-bottom: 0.5rem;
   font-family: the-seasons, serif;
@@ -480,7 +474,7 @@ li:last-child {
 }
 .button {
   display: inline-block;
-  border-bottom-width: 1px;
+  border-bottom-width: 0.5px;
   --tw-border-opacity: 1;
   border-color: rgb(35 31 29 / var(--tw-border-opacity));
 }
@@ -720,6 +714,9 @@ li:last-child {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-10p {
+  padding: 10%;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -727,9 +724,6 @@ li:last-child {
   padding: 5%;
 }
 .p-\[10\%\] {
-  padding: 10%;
-}
-.p-10p {
   padding: 10%;
 }
 .text-center {
@@ -754,15 +748,15 @@ li:last-child {
 .text-\[1\.8rem\] {
   font-size: 1.8rem;
 }
+.text-\[1rem\] {
+  font-size: 1rem;
+}
 .text-\[3rem\] {
   font-size: 3rem;
 }
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-.text-\[1rem\] {
-  font-size: 1rem;
 }
 .lowercase {
   text-transform: lowercase;
