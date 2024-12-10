@@ -786,6 +786,10 @@ li:last-child {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-\[6rem\] {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 .pl-10p {
   padding-left: 10%;
 }
@@ -970,6 +974,9 @@ li:last-child {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .md\:gap-12 {
+    gap: 3rem;
+  }
   .md\:border-t {
     border-top-width: 1px;
   }
@@ -1018,5 +1025,9 @@ li:last-child {
   }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
