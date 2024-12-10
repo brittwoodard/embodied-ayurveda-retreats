@@ -346,6 +346,9 @@ body {
 }
 p {
   margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.05em;
 }
 p:last-child {
   margin-bottom: 0px;
@@ -465,6 +468,12 @@ li:last-child {
   font-size: 2rem;
   letter-spacing: 0.025em;
 }
+.serif-md {
+  margin-bottom: 0.5rem;
+  font-family: the-seasons, serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.025em;
+}
 .serif-sm {
   margin-bottom: 0.5rem;
   font-family: the-seasons, serif;
@@ -569,6 +578,14 @@ li:last-child {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.mx-5p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .-mt-\[1rem\] {
   margin-top: -1rem;
 }
@@ -638,6 +655,9 @@ li:last-child {
 .h-screen {
   height: 100vh;
 }
+.min-h-\[90vh\] {
+  min-height: 90vh;
+}
 .w-\[75vw\] {
   width: 75vw;
 }
@@ -659,6 +679,9 @@ li:last-child {
 .resize {
   resize: both;
 }
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -677,6 +700,9 @@ li:last-child {
 .gap-4 {
   gap: 1rem;
 }
+.gap-12 {
+  gap: 3rem;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -685,6 +711,10 @@ li:last-child {
 }
 .border {
   border-width: 1px;
+}
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
 }
 .border-dark {
   --tw-border-opacity: 1;
@@ -723,6 +753,20 @@ li:last-child {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.pl-5p {
+  padding-left: 5%;
+}
+.pl-10p {
+  padding-left: 10%;
+}
 .text-center {
   text-align: center;
 }
@@ -742,11 +786,17 @@ li:last-child {
 .text-\[1\.25rem\] {
   font-size: 1.25rem;
 }
+.text-\[1\.2rem\] {
+  font-size: 1.2rem;
+}
 .text-\[1\.8rem\] {
   font-size: 1.8rem;
 }
 .text-\[1rem\] {
   font-size: 1rem;
+}
+.text-\[2rem\] {
+  font-size: 2rem;
 }
 .text-\[3rem\] {
   font-size: 3rem;
@@ -755,8 +805,14 @@ li:last-child {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 .lowercase {
   text-transform: lowercase;
+}
+.leading-5 {
+  line-height: 1.25rem;
 }
 .leading-\[0\.8em\] {
   line-height: 0.8em;
@@ -770,14 +826,11 @@ li:last-child {
 .leading-tight {
   line-height: 1.25;
 }
-.leading-3 {
-  line-height: .75rem;
-}
-.leading-5 {
-  line-height: 1.25rem;
-}
 .tracking-\[0\.1em\] {
   letter-spacing: 0.1em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 .outline {
   outline-style: solid;
@@ -882,6 +935,9 @@ li:last-child {
   }
   .lg\:h-\[60vh\] {
     height: 60vh;
+  }
+  .lg\:w-\[60\%\] {
+    width: 60%;
   }
   .lg\:w-\[80\%\] {
     width: 80%;
