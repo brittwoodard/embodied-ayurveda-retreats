@@ -952,6 +952,9 @@ li:last-child {
   .md\:mr-4 {
     margin-right: 1rem;
   }
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
   .md\:grid {
     display: grid;
   }
@@ -978,6 +981,10 @@ li:last-child {
   }
   .md\:p-10p {
     padding: 10%;
+  }
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   .md\:text-left {
     text-align: left;
