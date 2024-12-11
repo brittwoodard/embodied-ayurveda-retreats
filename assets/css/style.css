@@ -793,6 +793,9 @@ li:last-child {
 .pl-10p {
   padding-left: 10%;
 }
+.pr-10p {
+  padding-right: 10%;
+}
 .text-left {
   text-align: left;
 }
@@ -943,6 +946,12 @@ li:last-child {
   .md\:top-\[25\%\] {
     top: 25%;
   }
+  .md\:order-last {
+    order: 9999;
+  }
+  .md\:order-first {
+    order: -9999;
+  }
   .md\:my-16 {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -992,6 +1001,9 @@ li:last-child {
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+  .md\:pr-0 {
+    padding-right: 0px;
   }
   .md\:text-left {
     text-align: left;
